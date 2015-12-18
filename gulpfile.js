@@ -15,6 +15,7 @@ var browserSync = require('browser-sync');
  * Using different folders/file names? Change these constants:
  */
 var PHASER_PATH = './node_modules/phaser/build/';
+var BOX2D_PATH = './node_modules/PhaserBox2d/dist/testing/';
 var BUILD_PATH = './build';
 var SCRIPTS_PATH = BUILD_PATH + '/scripts';
 var SOURCE_PATH = './src';
@@ -82,6 +83,9 @@ function copyPhaser() {
     srcList = srcList.map(function(file) {
         return PHASER_PATH + file;
     });
+
+    srcList.push(BOX2D_PATH + 'box2d-html5.js');
+    srcList.push(BOX2D_PATH + 'box2d-plugin.js');
         
     return gulp.src(srcList)
         .pipe(gulp.dest(SCRIPTS_PATH));

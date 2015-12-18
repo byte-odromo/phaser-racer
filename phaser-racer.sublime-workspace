@@ -1,0 +1,2374 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pos",
+				"posRLT"
+			],
+			[
+				"las",
+				"lastPosRLT"
+			],
+			[
+				"getREe",
+				"getRearRightTirePos"
+			],
+			[
+				"an",
+				"frontAnchorImg"
+			],
+			[
+				"fro",
+				"frontAnchor〔variable〕"
+			],
+			[
+				"de",
+				"debugInfo"
+			],
+			[
+				"Track",
+				"Track_0_background"
+			],
+			[
+				"prot",
+				"prototype"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"ema",
+				"$emailTemplate〔variable〕"
+			],
+			[
+				"co",
+				"config"
+			],
+			[
+				"timeo",
+				"timeout"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"p",
+				"props"
+			],
+			[
+				"clear",
+				"clearTimeout〔function〕"
+			],
+			[
+				"CG",
+				"CGClass"
+			],
+			[
+				"sho",
+				"showCGBand"
+			],
+			[
+				"trans",
+				"transition-delay: 〔property〕"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"vide",
+				"videoTitle"
+			],
+			[
+				"video",
+				"videoIdToPlay"
+			],
+			[
+				"ex",
+				"externalList"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"_dra",
+				"_drawYoutubeVideo"
+			],
+			[
+				"_draw",
+				"_drawLoadingComponent"
+			],
+			[
+				"draw",
+				"drawArtistList"
+			],
+			[
+				"class",
+				"classes"
+			],
+			[
+				"has",
+				"hasPrev〔variable〕"
+			],
+			[
+				"Aeromith",
+				"Aerosmith"
+			],
+			[
+				"tot",
+				"total_results"
+			],
+			[
+				"inclu",
+				"includes"
+			],
+			[
+				"add",
+				"added_at〔variable〕"
+			],
+			[
+				"clas",
+				"classes"
+			],
+			[
+				"play",
+				"playlistTrack〔variable〕"
+			],
+			[
+				"_",
+				"_removedTracks"
+			],
+			[
+				"_t",
+				"_trackChanged"
+			],
+			[
+				"added",
+				"added_by"
+			],
+			[
+				"Play",
+				"PlaylistTrack"
+			],
+			[
+				"promis",
+				"promises"
+			],
+			[
+				"type",
+				"typeof〔keyword〕"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"login",
+				"loginUrl〔variable〕"
+			],
+			[
+				"_get",
+				"_getClient"
+			],
+			[
+				"facto",
+				"factory"
+			],
+			[
+				"search",
+				"search_type"
+			],
+			[
+				"exa",
+				"exactMatch"
+			],
+			[
+				"track",
+				"trackList"
+			],
+			[
+				"ob",
+				"object"
+			],
+			[
+				"art",
+				"artistCollection"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"const",
+				"const〔keyword〕"
+			],
+			[
+				"scr",
+				"script"
+			],
+			[
+				"cur",
+				"curIndex"
+			],
+			[
+				"curI",
+				"curIndex"
+			],
+			[
+				"result",
+				"resultPromise"
+			],
+			[
+				"bac",
+				"background-color: 〔property〕"
+			],
+			[
+				"ba",
+				"background-color: 〔property〕"
+			],
+			[
+				"js",
+				"json_decode"
+			],
+			[
+				"strt",
+				"strtolower〔function〕"
+			],
+			[
+				"array_",
+				"array_search"
+			],
+			[
+				"json",
+				"json_encode〔function〕"
+			],
+			[
+				"teplateC",
+				"$templateCount〔variable〕"
+			],
+			[
+				"paddin",
+				"padding-bottom: 〔property〕"
+			],
+			[
+				"back",
+				"background-size: 〔property〕"
+			],
+			[
+				"inli",
+				"inline"
+			],
+			[
+				"backg",
+				"background-color: 〔property〕"
+			],
+			[
+				"cons",
+				"console"
+			],
+			[
+				"marke",
+				"marker"
+			],
+			[
+				"Landscae",
+				"landscape"
+			],
+			[
+				"L",
+				"Landscapes"
+			],
+			[
+				"arct",
+				"arctic-landscapes"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"googlemaps",
+				"googlemaps-angular"
+			],
+			[
+				"cont",
+				"contact"
+			],
+			[
+				"l",
+				"log"
+			],
+			[
+				"sele",
+				"selectedTab"
+			],
+			[
+				"ng-sw",
+				"ng-switch-when	AngularJS"
+			],
+			[
+				"output",
+				"outputFileName"
+			],
+			[
+				"Debug",
+				"Debug::_vx($item"
+			],
+			[
+				"arr",
+				"$arrCss〔variable〕"
+			],
+			[
+				"Views",
+				"Views_Router〔class〕"
+			],
+			[
+				"out",
+				"$output〔variable〕"
+			],
+			[
+				"str_re",
+				"str_replace〔function〕"
+			],
+			[
+				"strp",
+				"strpos〔function〕"
+			],
+			[
+				"conf",
+				"$config〔variable〕"
+			],
+			[
+				"in",
+				"insertBefore〔function〕"
+			],
+			[
+				"set",
+				"setDirectData〔function〕"
+			],
+			[
+				"page",
+				"$pageHTML〔variable〕"
+			],
+			[
+				"bricks",
+				"$bricksOverrideFile〔variable〕"
+			],
+			[
+				"conte",
+				"content"
+			],
+			[
+				"item",
+				"itemValue〔argument〕"
+			],
+			[
+				"on",
+				"onLoadCallback"
+			],
+			[
+				"fu",
+				"fullscreenSlider"
+			],
+			[
+				"off",
+				"offsetSet〔function〕"
+			],
+			[
+				"ke",
+				"$keyName〔variable〕"
+			],
+			[
+				"k",
+				"$keyName〔variable〕"
+			],
+			[
+				"templa",
+				"$template〔variable〕"
+			],
+			[
+				"source",
+				"sourceData"
+			],
+			[
+				"sour",
+				"setSourceData"
+			],
+			[
+				"sou",
+				"sourceData"
+			],
+			[
+				"gallery",
+				"galleryItems"
+			],
+			[
+				"local",
+				"$localBase〔variable〕"
+			],
+			[
+				"file",
+				"$fileName〔variable〕"
+			],
+			[
+				"scss",
+				"$scssText〔variable〕"
+			],
+			[
+				"sas",
+				"$sassVariables〔variable〕"
+			],
+			[
+				"Views_",
+				"Views_Router〔class〕"
+			],
+			[
+				"get",
+				"getSolutionDir〔function〕"
+			],
+			[
+				"origin",
+				"originalBrick"
+			],
+			[
+				"brick",
+				"brickFolder  (variable)"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"bri",
+				"brickFolder  (variable)"
+			],
+			[
+				"module",
+				"modules  (variable)"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"bricl",
+				"brick  (variable)"
+			],
+			[
+				"ara",
+				"array"
+			],
+			[
+				"ins",
+				"insertBefore  (function)"
+			],
+			[
+				"isA",
+				"is_array"
+			],
+			[
+				"file_",
+				"file_get_contents"
+			],
+			[
+				"como",
+				"common"
+			],
+			[
+				"Utils_",
+				"Utils_Helper"
+			],
+			[
+				"or",
+				"origin"
+			],
+			[
+				"resol",
+				"resolveObject"
+			],
+			[
+				"resolve",
+				"resolveTrue"
+			],
+			[
+				"_on",
+				"_onTrue"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"tex",
+				"text-transform"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 1423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/states/RaceGameState.js",
+			"settings":
+			{
+				"buffer_size": 4733,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Judge.js",
+			"settings":
+			{
+				"buffer_size": 1536,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Car.js",
+			"settings":
+			{
+				"buffer_size": 5094,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/FXs.js",
+			"settings":
+			{
+				"buffer_size": 2176,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/phaser-racer/game/path-tester.html",
+			"settings":
+			{
+				"buffer_size": 4857,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Santa.js",
+			"settings":
+			{
+				"buffer_size": 5682,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Tracks.js",
+			"settings":
+			{
+				"buffer_size": 1854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Tree.js",
+			"settings":
+			{
+				"buffer_size": 388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/objects/Grass.js",
+			"settings":
+			{
+				"buffer_size": 388,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/components/ball.js",
+			"settings":
+			{
+				"buffer_size": 442,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/game.js",
+			"settings":
+			{
+				"buffer_size": 12627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <title>Phaser Box2D Example</title>\n        <script src=\"js/phaser-arcade-physics.min.js\" type=\"text/javascript\"></script>\n        <script src=\"js/box2d-plugin-full.min.js\" type=\"text/javascript\"></script>\n    </head>\n    <body>\n\n        <script type=\"text/javascript\">\n\nvar game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, render: render, update: update });\n\n//Vertices to create chainShape that forms the inner wall of the entire racetrack\nvar trackInnerVertices = [230,120, 150,200, 150,250, 250,250, 550,250, 600,300, 600,400, 550,450, 150,450, 150,490, 620,490, 670,440, 670,170, 620,120, 230,120];\n\n//Vertices to create chainSHape that forms the outer wall of the entire racetrack\nvar trackOuterVertices = [200,20, 50,150, 50,300, 100,350, 500,350, 500,360, 100,360, 50,400, 50,540, 100,590, 720,590, 770,540, 770,70, 720,20, 200,20];\nfunction preload() {\n    game.load.image('car', 'assets/sprites/car.png');\n    game.load.image('racetrack', 'assets/sprites/racetrack.png');\n    game.load.image('platform', 'assets/sprites/platform.png');\n}\n\n\nvar cursors; //arrow keys to control car\nvar car; //variable to hold car sprite\nvar lastLapTime = 0; //keep track of lap time\nvar lapTime = 0; //keep track of lap time\nvar lapText; //display last lap time\nvar turbo = false; //keep track of whether turbo is active\nvar turboTime = 0; //keep track of when turbo becomes available/runs out\nvar turboText; //display when turbo is available\nvar bestLapTime = 0; //keep track of best lap time\nvar bestLapText; //display best lap time\n\nfunction create() {\n	\n	game.stage.backgroundColor = '#124184';\n\n	// Enable Box2D physics\n	game.physics.startSystem(Phaser.Physics.BOX2D);\n    \n    game.physics.box2d.setBoundsToWorld();\n    game.physics.box2d.restitution = 0.5;\n    game.physics.box2d.friction = 2;\n    \n    //set up cursors for arrow key input\n    cursors = game.input.keyboard.createCursorKeys();\n    \n    //create track\n    game.add.sprite(0, 0, 'racetrack');\n    //Create track\n    var innerTrack = new Phaser.Physics.Box2D.Body(game, null, 0, 0, 0);\n    innerTrack.setChain(trackInnerVertices);\n    \n    var outerTrack = new Phaser.Physics.Box2D.Body(game, null, 0, 0, 0);\n    outerTrack.setChain(trackOuterVertices);\n    //Create car\n    car = game.add.sprite(730, game.world.centerY, 'car');\n    game.physics.box2d.enable(car);\n    createCar(car);\n    \n    //platform to be used for finish line\n    var plat = game.add.sprite(400, -20, 'platform');\n    game.physics.box2d.enable(plat);\n    plat.body.static = true;\n    \n    //fixture added to platform for finish line, to access Fixture.SetSensor method\n    var finish = plat.body.addRectangle(20, 100, 0, 90, 0);\n    finish.SetSensor(true);\n    \n    //set contact callback between car and finish line so that crossFinishLine() is called every time a lap is completed\n    car.body.setFixtureContactCallback(finish, crossFinishLine, this);\n    \n    \n    //set up text fields with default text values\n    lapText = game.add.text(5, 10, 'Last Lap Time: --', { fill: '#ffffff', font: '12pt Arial' });\n    bestLapText = game.add.text(5, 30, 'Best Lap Time: --', { fill: '#ffffff', font: '12pt Arial' });\n    turboText = game.add.text(5, 50, 'Hit Z for Turbo Boost!', { fill: '#dddddd', font: '12pt Arial' });\n    \n\n}\n\n//car/finish line contact callback. Called at the completion of each lap\nfunction crossFinishLine(carBody, lineBody, carFixture, lineFixture, begin, contact) {\n    //make sure it is a begin event so it is only called once each time the finish line is crossed\n    if (begin) {\n        if (lastLapTime != 0) { // if lastLapTime is not 0(if this isn't the first time crossing the finish line)\n            //calculate lap time\n            lapTime = game.time.now - lastLapTime; \n            //reset lastLapTime to the current time so it can be used to calculate the time of the next lap\n            lastLapTime = game.time.now;\n            //set lastLap text to the time of the last lap in seconds\n            lapText.text = 'Last Lap Time: ' + (lapTime / Phaser.Timer.SECOND);\n            //if bestLapTime hasn't been set yet, or if this lap is faster than the bestLapTime, then set this laps time as the new bestLapTime\n            if (bestLapTime == 0 || lapTime < bestLapTime) {\n                bestLapTime = lapTime;\n                bestLapText.text = 'Best Lap Time: ' + (bestLapTime / Phaser.Timer.SECOND);\n            }\n        } else { //if this is the first time crossing finish line\n            lastLapTime = game.time.now; //set lastLapTime so that next time the finish line is crossed it can calculate the lapTime and everything else\n        }\n    }\n}\n\n\nfunction update() {\n    //set zero rotation every frame, so that the car doesn't keep turning even when no keys are pressed\n    car.body.setZeroRotation();\n    \n    //handle left/right turning\n    if (cursors.left.isDown)\n    {\n        car.turnLeft();	\n    }\n    else if (cursors.right.isDown)\n    {\n        car.turnRight();\n    }\n\n    //accelerate when up is pressed\n    if (cursors.up.isDown) \n    {\n        car.accelerate();\n    }\n    else if (cursors.down.isDown)\n    {\n        //breaks unnecesary :). \n    }\n    \n    //Handle turbo\n    if (!turbo) {  //if turbo isn't currently active\n        if (game.input.keyboard.isDown(Phaser.Keyboard.Z)) //if Z(turbo key) is being pressed\n        {\n            if (game.time.now > turboTime) { //the current time is passed the turbo cooldown\n                //activate turbo, set the turboTime to a second from now so that once a second passes the update loop will turn of the turbo\n                turboTime = game.time.now + Phaser.Timer.SECOND;\n                turbo = true;\n                car.power = 800;\n            }\n        } \n        if (game.time.now > turboTime) {//whether or not z is pressed, check if current time is passed turbo time\n            //if it is set the turboText telling the user to activate turbo boost\n            turboText.text = 'Hit Z for Turbo Boost!';\n        } else { // if it's not ready yet tell the user how long until they can use turbo\n            turboText.text = 'Turbo in - ' + ((turboTime - game.time.now) / Phaser.Timer.SECOND);\n        }\n    } else { //if turbo is currently active\n        if (game.time.now > turboTime) { //if current time i passed turbo time then deactivate turbo\n            turboTime = game.time.now + Phaser.Timer.SECOND * 5;\n            turbo = false;\n            car.power = 450;\n        }\n    }\n\n}\n\nfunction render() {\n	\n	//game.debug.box2dWorld();\n	\n}\n\n//Create car. Takes a simple car sprite and adds all the properties and functions needed to make it a functional top-down vehicle\nfunction createCar(sprite) { \n    //set the body to a slightly smaller rectangle, so there is no padding around the outside of the sprite that cause you to hit walls even when visually the car sprite isn't touching the wall\n    sprite.body.setRectangle(18, 28, 0, 0, 0);\n    \n    //movement variables. power for speed/acceleration, turnspeed for handling, and damping to decrease sliding/driftyness\n    sprite.body.linearDamping = 1.6;\n    sprite.power = 450;\n    sprite.turnSpeed = 140;\n    \n    \n    //accelerate function\n    sprite.accelerate = function() {\n        sprite.body.thrust(sprite.power);\n    }\n    \n    \n    //left and right turning functions\n    sprite.turnLeft = function() {\n        sprite.body.rotateLeft(sprite.turnSpeed);\n    }\n    \n    sprite.turnRight = function() {\n        sprite.body.rotateRight(sprite.turnSpeed);\n    }\n        \n}\n    \n    \n\n\n        </script>\n\n    </body>\n</html>",
+			"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Top down car.html",
+			"file_size": 7864,
+			"file_write_time": 130946104906081243,
+			"settings":
+			{
+				"buffer_size": 7665,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/phaser-racer/game/js/racer.js",
+			"settings":
+			{
+				"buffer_size": 8867,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 4889,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/index.html",
+			"settings":
+			{
+				"buffer_size": 411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/package.json",
+			"settings":
+			{
+				"buffer_size": 1081,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"toggle m",
+				"View: Toggle Menu"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Get Elements"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/opt/lampp/htdocs/phaser-racer-demo",
+		"/opt/lampp/htdocs/phaser-racer-demo/src",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/objects",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/states",
+		"/opt/lampp/htdocs/phaser-racer-demo/static",
+		"/opt/lampp/htdocs/phaser-racer-demo/static/assets",
+		"/opt/lampp/htdocs/phaser-racer-demo/static/assets/gfx",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/dist",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/dist/testing",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/assets",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/manual",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/src",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/src/plugin"
+	],
+	"file_history":
+	[
+		"/opt/lampp/htdocs/phaser-racer/game/index.html",
+		"/opt/lampp/htdocs/phaser-racer/game/path-tester.html",
+		"/opt/lampp/htdocs/phaser-racer/game/test-p3.html",
+		"/opt/lampp/htdocs/phaser-racer/game/test-p2-1.html",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Revolute Joint - Limits.html",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/objects/Tracks.js",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples/js/box2d-plugin-full.min.js",
+		"/home/cosmitar/Escritorio/avengers.torrent",
+		"/home/cosmitar/avengers era de ultron",
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/src/box2d/box2d-html5.js",
+		"/opt/lampp/htdocs/freestyle/site/front-end/app/components/boot.js",
+		"/opt/lampp/htdocs/freestyle/site/front-end/app/components/ui.js",
+		"/opt/lampp/htdocs/freestyle/site/front-end/app/app.js",
+		"/opt/lampp/htdocs/phaser-racer-demo/package.json",
+		"/home/cosmitar/Descargas/Pistero.svg",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/objects/Car.js",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/states/RaceGameState.js",
+		"/opt/lampp/htdocs/wanderingowl_tools/src/design/common_email_template.html",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/objects/RainbowText.js",
+		"/opt/lampp/htdocs/wanderingowl_tools/package.json",
+		"/opt/lampp/htdocs/phaser-racer-demo/src/objects/Tracks",
+		"/opt/lampp/htdocs/tests/christmas ruffle/app.php",
+		"/opt/lampp/htdocs/youtube-playlist-player/src/components/CGBand.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/src/components/Player.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/src/App.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/src/index.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/demo/index.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/page/.git/config",
+		"/opt/lampp/htdocs/youtube-playlist-player/index.html",
+		"/opt/lampp/htdocs/youtube-playlist-player/gulpfile.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/server.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/webpack.config.js",
+		"/opt/lampp/htdocs/youtube-playlist-player/.gitignore",
+		"/opt/lampp/htdocs/youtube-playlist-player/package.json",
+		"/home/cosmitar/Descargas/The.Walking.Dead.S06E07.HDTV.x264-FLEET.[VTV]/The.Walking.Dead.S06E07.HDTV.x264-FLEET.srt",
+		"/opt/lampp/htdocs/youtube-playlist-player/page/index.html",
+		"/opt/lampp/htdocs/youtube-wrapper/demo/demo.js",
+		"/opt/lampp/htdocs/youtube-wrapper/demo/index.html",
+		"/opt/lampp/htdocs/youtube-playlist-player/webpack.config.production.js",
+		"/opt/lampp/htdocs/byte-odromo-game/package.json",
+		"/opt/lampp/htdocs/byte-odromo-lobby/package.json",
+		"/opt/lampp/htdocs/byte-odromo-joystick/package.json",
+		"/opt/lampp/htdocs/imvdb-client/package.json",
+		"/opt/lampp/htdocs/imvdb-client/.gitignore",
+		"/opt/lampp/htdocs/imvdb-client/README.MD",
+		"/opt/lampp/htdocs/imvdb-client/src/index.js",
+		"/opt/lampp/htdocs/imvdb-client/demo/demo.js",
+		"/opt/lampp/htdocs/imvdb-client/demo/index.html",
+		"/opt/lampp/htdocs/imvdb-client/src/classes/SearchParams.js",
+		"/opt/lampp/htdocs/imvdb-client/src/classes/Browser.js",
+		"/opt/lampp/htdocs/imvdb-client/src/classes/Paginator.js",
+		"/opt/lampp/htdocs/imvdb-client/src/classes/Model.js",
+		"/opt/lampp/htdocs/imvdb-client/src/entities/Entity.js",
+		"/opt/lampp/htdocs/imvdb-client/src/entities/Video.js",
+		"/opt/lampp/htdocs/imvdb-client/gulpfile.js",
+		"/opt/lampp/htdocs/imvdb-client/src/services/APIClient.js",
+		"/opt/lampp/htdocs/imvdb-client/.npmignore",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Session.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/Artist.js",
+		"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/templates/home-body.php",
+		"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/templates/home-head.php",
+		"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/index.php",
+		"/opt/lampp/htdocs/spotify-client/.gitignore",
+		"/opt/lampp/htdocs/spotify-client/src/services/APIClient.js",
+		"/opt/lampp/htdocs/spotify-client/README.MD",
+		"/opt/lampp/htdocs/hit-combo-maker/.gitignore",
+		"/opt/lampp/htdocs/spotify-client/package.json",
+		"/opt/lampp/htdocs/spotify-client/src/index.js",
+		"/opt/lampp/htdocs/spotify-client/.npmignore",
+		"/opt/lampp/htdocs/spotify-client/demo/demo.js",
+		"/opt/lampp/htdocs/hit-combo-maker/node_modules/spotify-client/lib/services/APIClient.js",
+		"/opt/lampp/htdocs/hit-combo-maker/node_modules/spotify-client/package.json",
+		"/opt/lampp/htdocs/hit-combo-maker/node_modules/spotify-client/src/index.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/QueryBuilder.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Model.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/Album.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/Track.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/User.js",
+		"/opt/lampp/htdocs/spotify-client/index.html",
+		"/opt/lampp/htdocs/tests/react+spotify-api/.gitignore",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Album.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Artist.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Browser.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/User.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Me.js",
+		"/opt/lampp/htdocs/spotify-client/node_modules/browser-sync/node_modules/serve-index/public/style.css",
+		"/opt/lampp/htdocs/spotify-client/demo/index.html",
+		"/opt/lampp/htdocs/spotify-client/node_modules/vinyl-source-stream/test.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Playlist.js",
+		"/opt/lampp/htdocs/tests/react+spotify-api/src/main.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Track.js",
+		"/opt/lampp/htdocs/spotify-client/src/classes/Test.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/QueryBuilder.js",
+		"/opt/lampp/htdocs/spotify-client/src/entities/Model.js",
+		"/opt/lampp/htdocs/spotify-client/gulpfile.js",
+		"/opt/lampp/htdocs/spotify-client/spec/lib/artist-find.js",
+		"/home/cosmitar/card.image",
+		"/opt/lampp/htdocs/spotify-client/src/handlers/Artist.js",
+		"/opt/lampp/htdocs/spotify-client/demo.js",
+		"/opt/lampp/htdocs/spotify-client/dist/app.js",
+		"/opt/lampp/htdocs/TSMM/development/front-end/style/sass/helpers/_social-networks.scss",
+		"/home/cosmitar/Documentos/After 7/git - pruebas de deploy",
+		"/opt/lampp/htdocs/TSMM/nextermedia/front-end/style/sass/helpers/_social-networks.scss",
+		"/opt/lampp/htdocs/TSMM/nextermedia/front-end/style/main.css",
+		"/opt/lampp/htdocs/autotall/autotall/front-end/bricks/autotall_herramientas/js/components/directives.js",
+		"/opt/lampp/htdocs/TSMM/nextermedia/front-end/bricks/nextermedia_master/partials/main.html",
+		"/opt/lampp/htdocs/TSMM/nextermedia/front-end/bricks/nextermedia_master/js/components/controllers.js",
+		"/opt/lampp/htdocs/TSMM/nextermedia/front-end/bricks/nextermedia_master/js/components/directives.js",
+		"/opt/lampp/htdocs/TSMM/humans.txt",
+		"/opt/lampp/htdocs/TSMM/robots.txt",
+		"/opt/lampp/htdocs/TSMM/development/front-end/style/main.css",
+		"/opt/lampp/htdocs/autotall/autotall/front-end/_index_en.devel.html",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/_promo_mejores_amigos.html",
+		"/opt/lampp/htdocs/autotall/autotall/front-end/content/_index_en.devel.html.json",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/content/_promo_mejores_amigos.html.json",
+		"/opt/lampp/htdocs/TSMM/candidocan/back-end/controllers/Controllers_Build.php",
+		"/opt/lampp/htdocs/TSMM/config.php",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/Gruntfile.js",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/config.json",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/candidocan_promo_mejoresamigos/partials/main.html",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/style/main.css",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/partials/main.html",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/js/components/directives.js",
+		"/opt/lampp/htdocs/edisur_plataforma_web/cms/back-end/controllers/Controllers_Files.php",
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/js/components/services.js",
+		"/opt/lampp/htdocs/edisur_plataforma_web/common/back-end/utils/externals/cms/Files.php",
+		"/opt/lampp/htdocs/edisur_plataforma_web/cms/back-end/models/Models_Files.php",
+		"/opt/lampp/htdocs/edisur_plataforma_web/common/back-end/views/Views_UIHandler.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples",
+			"/opt/lampp/htdocs/phaser-racer-demo/src",
+			"/opt/lampp/htdocs/phaser-box2d-plugin-v102/src",
+			"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/src",
+			"/opt/lampp/htdocs/imvdb-client/src/classes",
+			"/opt/lampp/htdocs/spotify-client/src",
+			"/opt/lampp/htdocs/spotify-client/src/classes",
+			"/opt/lampp/htdocs/spotify-client",
+			"/opt/lampp/htdocs/TSMM",
+			"/opt/lampp/htdocs/TSMM/candidocan",
+			"/opt/lampp/htdocs/TSMM/wanderingowl",
+			"/opt/lampp/htdocs/TSMM/wanderingowl/back-end",
+			"/opt/lampp/htdocs/TSMM/wanderingowl/front-end",
+			"/opt/lampp/htdocs/TSMM/wanderingowl",
+			"/opt/lampp/htdocs/TSMM/iluminacion-piletas",
+			"/opt/lampp/htdocs/TSMM/ibarrolatennis/front-end/bricks",
+			"/opt/lampp/htdocs/TSMM/ibarrolatennis",
+			"/opt/lampp/htdocs/TSMM",
+			"/opt/lampp/htdocs/TSMM/nextermedia",
+			"/opt/lampp/htdocs/TSMM/development",
+			"/opt/lampp/htdocs/TSMM/development/front-end/bricks",
+			"/opt/lampp/htdocs/TSMM/controlx/front-end",
+			"/opt/lampp/htdocs/TSMM/controlx/front-end/bricks",
+			"/opt/lampp/htdocs/TSMM/development/front-end/bricks",
+			"/opt/lampp/htdocs/TSMM/development/front-end",
+			"/opt/lampp/htdocs/TSMM/wanderingowl/back-end",
+			"/opt/lampp/htdocs/TSMM/base/back-end",
+			"/opt/lampp/htdocs/TSMM/base",
+			"/opt/lampp/htdocs/TSMM/common/back-end/utils/externals/cms",
+			"/opt/lampp/htdocs/edisur_plataforma_web/cms",
+			"/opt/lampp/htdocs/edisur sp/",
+			"/opt/lampp/htdocs/tpl/",
+			"/opt/lampp/htdocs/tpl/site/classes",
+			"/opt/lampp/htdocs/edisur sp",
+			"/opt/lampp/htdocs/edisur sp/site",
+			"/opt/lampp/htdocs/edisur sp",
+			"/opt/lampp/htdocs/edisur sp/cms/",
+			"/opt/lampp/htdocs/edisur sp/cms/*",
+			"/opt/lampp/htdocs/edisur sp/cms/",
+			"/opt/lampp/htdocs/edisur sp/cms/templates/js",
+			"/opt/lampp/htdocs/edisur sp/",
+			"/opt/lampp/htdocs/edisur sp/site/templates/jsapp",
+			"/opt/lampp/htdocs/edisur sp/site/templates/",
+			"/opt/lampp/htdocs/edisur sp/site/templates/jsapp",
+			"/opt/lampp/htdocs/edisur sp/site/templates/partials",
+			"/opt/lampp/htdocs/edisur sp/site/templates/jsapp"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"rotation",
+			"rearLeftWheelPos",
+			"car",
+			"tire",
+			"getRearLeftTirePos",
+			"this.car.position",
+			"this.lastPosition",
+			"FXs",
+			"this.game",
+			"this.tiresMark",
+			"lastPosition",
+			"prevPoint",
+			"frontAnchor",
+			"tiresMark",
+			"graphics",
+			"debugRedPath",
+			"position",
+			"debugRedPath",
+			"tween",
+			"Judge",
+			"cars",
+			"player",
+			"player1",
+			"tree",
+			"trhottle",
+			"trhottleOn",
+			"trhottle",
+			"trhottleOn",
+			"anvil",
+			"70",
+			"debug",
+			"3",
+			"startAt",
+			"debug",
+			"scale",
+			"frontAnchor",
+			"redCar",
+			"angle",
+			"detectCrush",
+			"window.car.",
+			"window.car",
+			"debugInfo",
+			"wake",
+			"debug",
+			"this.body",
+			"ropeJoint",
+			"crush",
+			"crushed",
+			"applyImpulse",
+			"pool",
+			"linearDamping",
+			"applyForce",
+			"SetGravityScale",
+			"mass",
+			"frontAnchor",
+			"Car",
+			"anchor",
+			"resttu",
+			"pahser-racer",
+			"myB",
+			"fixture",
+			"mass",
+			"turnSpeed",
+			"power",
+			"MouseJoint",
+			"b2MouseJointDef",
+			"joint",
+			"density",
+			"joint",
+			"startAt",
+			"this.state.getAnchor()",
+			"getAndhor",
+			"frontAnchor",
+			"this.frontAnchor",
+			"this.enable",
+			"enable",
+			"accelerate",
+			"trackInnerVertices",
+			"gravity",
+			"game.add.sprite",
+			"trackFrontAnchor",
+			"debug",
+			"trackFrontAnchor",
+			"create",
+			"sprite",
+			"trackFrontAnchor",
+			"anchor",
+			"gridPosition",
+			"rotation",
+			"render",
+			"this.body",
+			"box2d",
+			"box2d-plugin.js",
+			"BOX2D_PATH",
+			"BOX",
+			"BOX2D_PATH",
+			"PHASER_PATH",
+			"main",
+			"phaser",
+			"console.",
+			"detectCrush",
+			"debugInfo",
+			"crushFactor",
+			"'./assets/",
+			"./../",
+			"'./assets",
+			" = function(){",
+			"Car.prototype.",
+			"var ",
+			"RaveGameState",
+			"GameState",
+			"state",
+			"var",
+			"Track_O",
+			" ",
+			"rotation2Restore",
+			"rotation",
+			"rotation2Restore",
+			"restoreLastRotation",
+			"speed",
+			"lastPoint",
+			"direction",
+			"rotation",
+			"lasPoint",
+			"this._track",
+			"this._gridPosition",
+			"this._key",
+			"\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"fetches",
+			"query_type",
+			"browser",
+			"testBundler",
+			"getTopTracks",
+			".",
+			"brick",
+			"../../{url}",
+			"/gallery_summer_arctic_landscapes/",
+			"/slider-summer_arctic_landscapes/",
+			"/gallery_wild_side/",
+			"/slider-wild_side/",
+			"/gallery_arctic_landscapes/",
+			"wanderingowl",
+			"=",
+			".header",
+			".navigation-bar",
+			".navigation",
+			"'",
+			"content/assets/",
+			"=\"",
+			"build_sausage_css",
+			"brick",
+			"break",
+			"",
+			"theme/_",
+			"angular-touch/angular-touch.min.js",
+			"Diseño",
+			"Diseñó",
+			"data-brick-id",
+			"<no-brick type",
+			"<no-brick",
+			"$arrJS",
+			"base/",
+			"$tagSentence",
+			"EVENT_NAME_GET_VIEW_MODEL",
+			"Controllers_Menus",
+			"Controllers_Home",
+			"handler3",
+			"handler4",
+			"handler7",
+			"1101px",
+			"/tsmm",
+			"subscriber",
+			" data-ng-",
+			"projectcolor",
+			"$window.jQuery",
+			"showNewImageWindow",
+			"Controllers_EdisurMenus",
+			"handler.",
+			"edisur_webdocsgallery",
+			"projectData",
+			"ssg",
+			"edisur_slideshowgallery",
+			"Models_Pages",
+			"/front-end",
+			"/back-end",
+			"`proj`",
+			"formatCurrency",
+			"activationServer",
+			"mmg",
+			"images",
+			"jQuery",
+			"gallery.items",
+			"planimetry",
+			"numbers",
+			"user.relatedProjectIds",
+			"height",
+			"width",
+			"me.data",
+			"fields",
+			"plan_",
+			"planimetrygallery",
+			"faq",
+			"usefulnumbers",
+			"$usefulnumbersTableName",
+			"usefulnumbers",
+			"edisur_usefulnumbers",
+			"edisur_techdocsgallery",
+			"edisur_blueprintsgallery",
+			"getDisplayImage",
+			"SEARCH_LONELY_DOC_URL",
+			"techdocstype",
+			"techdocs_removedFields",
+			"techdocs_updatedFields",
+			"techdocs_newFields",
+			"saveREProjectButton",
+			"projectsView",
+			"array();",
+			"fields",
+			"panes",
+			"showEditHandler",
+			"editForm",
+			"$extract( ",
+			"state.action",
+			"\"newuser.",
+			"newuser.",
+			"homeService.",
+			"$acc",
+			"handler",
+			"id",
+			"amenities_",
+			"folderHandler",
+			"handler.",
+			"handler",
+			"hasNotaries",
+			"c_formToTab",
+			"c_tabToForm",
+			"handler62",
+			"_POST",
+			"user.selectedProject.selectedResume.",
+			"glyphicon-file\" title=\"ver comprobante\"",
+			"<a style=\"cursor:pointer\" class=\"glyphicon glyphicon-search\"></a>",
+			"fonts",
+			"res.",
+			"'loading'",
+			"user.",
+			"$scope",
+			"c",
+			"c2"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								897,
+								897
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/states/RaceGameState.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4733,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3351,
+								3351
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 967.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/objects/Judge.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1536,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1456,
+								1456
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 239.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/objects/Car.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5094,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1808,
+								1808
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/objects/FXs.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1197,
+								1197
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/opt/lampp/htdocs/phaser-racer/game/path-tester.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2861,
+								2861
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 810.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "src/objects/Santa.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5345,
+								5345
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1935.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "src/objects/Tracks.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1854,
+								1854
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "src/objects/Tree.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								388,
+								388
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "src/objects/Grass.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 388,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								363,
+								363
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/components/ball.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 442,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								300,
+								300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/game.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10157,
+								10157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4260.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Top down car.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7665,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4908,
+								4908
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1582.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "/opt/lampp/htdocs/phaser-racer/game/js/racer.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7555,
+								7555
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3030.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2392,
+								2392
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 997.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "static/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 411,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								291,
+								291
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1081,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 16,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 112.0
+	},
+	"pinned_build_system": "",
+	"project": "phaser-racer.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"topdown",
+				"phaser-box2d-plugin-v102/examples-extra/Top down car.html"
+			],
+			[
+				"pack",
+				"wanderingowl_tools/package.json"
+			],
+			[
+				".giti",
+				".gitignore"
+			],
+			[
+				"app",
+				"src/App.js"
+			],
+			[
+				"index.ht",
+				"index.html"
+			],
+			[
+				".gitig",
+				".gitignore"
+			],
+			[
+				"read",
+				"README.MD"
+			],
+			[
+				"model",
+				"src/classes/Model.js"
+			],
+			[
+				"gulp",
+				"gulpfile.js"
+			],
+			[
+				"demo",
+				"demo/demo.js"
+			],
+			[
+				"apicli",
+				"src/services/APIClient.js"
+			],
+			[
+				"pacj",
+				"spotify-client/package.json"
+			],
+			[
+				"play",
+				"spotify-client/src/entities/Playlist.js"
+			],
+			[
+				"packa",
+				"spotify-client/package.json"
+			],
+			[
+				"artis",
+				"spotify-client/src/entities/Artist.js"
+			],
+			[
+				"artist",
+				"spotify-client/src/entities/Artist.js"
+			],
+			[
+				"pac",
+				"spotify-client/package.json"
+			],
+			[
+				".git",
+				"react+spotify-api/.gitignore"
+			],
+			[
+				"sessi",
+				"spotify-client/src/classes/Session.js"
+			],
+			[
+				"style",
+				"spotify-client/node_modules/browser-sync/node_modules/serve-index/public/style.css"
+			],
+			[
+				"index",
+				"spotify-client/demo/index.html"
+			],
+			[
+				"album",
+				"spotify-client/src/classes/Album.js"
+			],
+			[
+				"test",
+				"spotify-client/node_modules/vinyl-source-stream/test.js"
+			],
+			[
+				"user",
+				"spotify-client/src/classes/User.js"
+			],
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"albu",
+				"src/entities/Album.js"
+			],
+			[
+				"main.css",
+				"nextermedia/front-end/style/main.css"
+			],
+			[
+				"main",
+				"development/front-end/style/main.css"
+			],
+			[
+				"save",
+				"candidocan/front-end/content/saveContact.php"
+			],
+			[
+				"mejores.json",
+				"candidocan/front-end/content/_promo_mejores_amigos.html.json"
+			],
+			[
+				"robot",
+				"robots.txt"
+			],
+			[
+				"savec",
+				"candidocan/front-end/content/saveContact.php"
+			],
+			[
+				".css",
+				"candidocan/front-end/style/main.css"
+			],
+			[
+				"bricks.js",
+				"candidocan/front-end/bricks/config.json"
+			],
+			[
+				"savecontact.php",
+				"candidocan/front-end/content/saveContact.php"
+			],
+			[
+				"config.js",
+				"candidocan/front-end/bricks/config.json"
+			],
+			[
+				"index.html.jso",
+				"candidocan/front-end/content/_index.devel.html.json"
+			],
+			[
+				"config.",
+				"config.php"
+			],
+			[
+				"html.jso",
+				"candidocan/front-end/content/_index.devel.html.json"
+			],
+			[
+				"controllers_b",
+				"candidocan/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				".json",
+				"candidocan/front-end/bricks/config.json"
+			],
+			[
+				"html.json",
+				"candidocan/front-end/content/_index.devel.html.json"
+			],
+			[
+				"grun",
+				"candidocan/front-end/Gruntfile.js"
+			],
+			[
+				"_templa",
+				"common/back-end/views/Views_Template.php"
+			],
+			[
+				"models_bricks.php",
+				"candidocan/back-end/models/Models_Bricks.php"
+			],
+			[
+				".ht",
+				".htaccess"
+			],
+			[
+				"_build.php",
+				"wanderingowl/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"_arc",
+				"wanderingowl/front-end/content/_arctic-landscapes_en.devel.html.json"
+			],
+			[
+				"models_bri",
+				"wanderingowl/back-end/models/Models_Bricks.php"
+			],
+			[
+				"build",
+				"wanderingowl/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"models_bric",
+				"wanderingowl/back-end/models/Models_Bricks.php"
+			],
+			[
+				"controllers_buil",
+				"ibarrolatennis/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				".gitigno",
+				".gitignore"
+			],
+			[
+				"models_pages",
+				"development/back-end/models/Models_Pages.php"
+			],
+			[
+				"controllers_pre",
+				"wanderingowl/back-end/controllers/Controllers_Preview.php"
+			],
+			[
+				"_pre",
+				"wanderingowl/back-end/controllers/Controllers_Preview.php"
+			],
+			[
+				"config",
+				"config.php"
+			],
+			[
+				"views_router",
+				"common/back-end/views/Views_Router.php"
+			],
+			[
+				"models_brick",
+				"candidocan/back-end/models/Models_Bricks.php"
+			],
+			[
+				"confi",
+				"config.php"
+			],
+			[
+				"controllebuil",
+				"development/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"controllers_build",
+				"wanderingowl/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"contrbuil",
+				"iluminacion-piletas/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"conf",
+				"config.php"
+			],
+			[
+				"sour",
+				"development/front-end/js/app/source.js"
+			],
+			[
+				"_grunt",
+				"iluminacion-piletas/front-end/_Gruntfile_template.js"
+			],
+			[
+				"con",
+				"config.php"
+			],
+			[
+				"_index_",
+				"development/front-end/_index_en.devel.html"
+			],
+			[
+				"index.html",
+				"ibarrolatennis/front-end/build/index.html"
+			],
+			[
+				"utils_helper",
+				"common/back-end/utils/Utils_Helper.php"
+			],
+			[
+				"grunt",
+				"ibarrolatennis/front-end/Gruntfile.js"
+			],
+			[
+				"config.json",
+				"ibarrolatennis/front-end/bricks/config.json"
+			],
+			[
+				"notas",
+				"Notas del Build de ControlX"
+			],
+			[
+				"not",
+				"Notas del Build de ControlX"
+			],
+			[
+				"buld",
+				"cms/front-end/js/ext-4.1.1a/build.xml"
+			],
+			[
+				"views_te",
+				"common/back-end/views/Views_Template.php"
+			],
+			[
+				"views_view",
+				"common/back-end/views/Views_View.php"
+			],
+			[
+				"controlle",
+				"nextermedia/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"conf.json",
+				"nextermedia/front-end/bricks/config.json"
+			],
+			[
+				"views_v",
+				"common/back-end/views/Views_View.php"
+			],
+			[
+				"views_tem",
+				"common/back-end/views/Views_Template.php"
+			],
+			[
+				"_grun",
+				"nextermedia/front-end/_Gruntfile_template.js"
+			],
+			[
+				"_colors.scss",
+				"controlx/front-end/style/sass/helpers/_colors.scss"
+			],
+			[
+				"_breakpoints.scss",
+				"controlx/front-end/style/sass/helpers/_breakpoints.scss"
+			],
+			[
+				"controllers_bu",
+				"nextermedia/back-end/controllers/Controllers_Build.php"
+			],
+			[
+				"_ang",
+				"nextermedia/front-end/style/sass/vendors/_angular-csp.scss"
+			],
+			[
+				"scss.inc.php",
+				"common/back-end/utils/externals/scssphp/scss.inc.php"
+			],
+			[
+				"_angular-csp.scss",
+				"controlx/front-end/style/sass/vendors/_angular-csp.scss"
+			],
+			[
+				"controlx",
+				"Notas del Build de ControlX"
+			],
+			[
+				"models_br",
+				"nextermedia/back-end/models/Models_Bricks.php"
+			],
+			[
+				"sourc",
+				"development/front-end/js/app/source.js"
+			],
+			[
+				"viewste",
+				"common/back-end/views/Views_Template.php"
+			],
+			[
+				"viewst",
+				"common/back-end/views/Views_Template.php"
+			],
+			[
+				"models_de",
+				"common/back-end/models/Models_DefaultViewModel.php"
+			],
+			[
+				"modelbr",
+				"controlx/back-end/models/Models_Bricks.php"
+			],
+			[
+				"models_b",
+				"controlx/back-end/models/Models_Bricks.php"
+			],
+			[
+				"models_te",
+				"common/back-end/models/Models_DefaultViewModel.php"
+			],
+			[
+				"obs",
+				"common/back-end/utils/externals/cms/Observable.php"
+			],
+			[
+				"models_defaultviewmodel",
+				"common/back-end/models/Models_DefaultViewModel.php"
+			],
+			[
+				"modelpa",
+				"development/back-end/models/Models_Pages.php"
+			],
+			[
+				"controllers_preview",
+				"development/back-end/controllers/Controllers_Preview.php"
+			],
+			[
+				"observa",
+				"common/back-end/utils/externals/cms/Observable.php"
+			],
+			[
+				"utilscon",
+				"cms/back-end/utils/config/dev/Utils_Config.php"
+			],
+			[
+				"controllers_page",
+				"web/back-end/controllers/Controllers_Pages.php"
+			],
+			[
+				"controllers_home",
+				"cms/back-end/controllers/Controllers_Home.php"
+			],
+			[
+				"controller",
+				"cms/back-end/controllers/Controllers_Devel.php"
+			],
+			[
+				"configura",
+				"common/back-end/utils/externals/cms/Configuration.php"
+			],
+			[
+				"utils",
+				"cms/back-end/utils/config/dev/Utils_Config.php"
+			],
+			[
+				"untils_cong",
+				"cms/back-end/utils/config/dev/Utils_Config.php"
+			],
+			[
+				"es.json",
+				"cms/front-end/js/locale/es.json"
+			],
+			[
+				"controllres_",
+				"cms/back-end/controllers/Controllers_Devel.php"
+			],
+			[
+				"utils_help",
+				"common/back-end/utils/Utils_Helper.php"
+			],
+			[
+				"document",
+				"common/back-end/utils/externals/cms/Document.php"
+			],
+			[
+				"_mul",
+				"cms/front-end/js/uicontrols/edisur_multimediagallery.js"
+			],
+			[
+				"multime",
+				"cms/front-end/js/uicontrols/edisur_multimediagallery.js"
+			],
+			[
+				"controllers_serve",
+				"web/back-end/controllers/Controllers_Services.php"
+			],
+			[
+				"models_",
+				"cms/back-end/models/Models_Emprendimientos.php"
+			],
+			[
+				"views",
+				"common/back-end/views/Views_UIHandler.php"
+			],
+			[
+				"utils_con",
+				"cms/back-end/utils/config/dev/Utils_Config.php"
+			],
+			[
+				"models_emp",
+				"cms/back-end/models/Models_Emprendimientos.php"
+			],
+			[
+				"controllers_em",
+				"cms/back-end/controllers/Controllers_Emprendimientos.php"
+			],
+			[
+				"es.js",
+				"cms/front-end/js/locale/es.json"
+			],
+			[
+				"devel",
+				"cms/back-end/controllers/Controllers_Devel.php"
+			],
+			[
+				"mmgall",
+				"cms/front-end/js/uicontrols/edisur_multimediagallery.js"
+			],
+			[
+				"gridpanelco",
+				"cms/front-end/js/uicontrols/gridpanelcolumns.js"
+			],
+			[
+				"es.jso",
+				"cms/front-end/js/locale/es.json"
+			],
+			[
+				"datepick",
+				"cms/front-end/js/uicontrols/datepicker.js"
+			],
+			[
+				"controllers_ho",
+				"cms/back-end/controllers/Controllers_Home.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "20",
+		"selected_items":
+		[
+			[
+				"20",
+				"/opt/lampp/htdocs/20v/20v.sublime-project"
+			],
+			[
+				"edis",
+				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
+			],
+			[
+				"wow",
+				"/opt/lampp/htdocs/wanderingowl_tools/wowl_tools.sublime-workspace"
+			],
+			[
+				"wowl",
+				"/opt/lampp/htdocs/wanderingowl_tools/wowl_tools.sublime-workspace"
+			],
+			[
+				"spot",
+				"/opt/lampp/htdocs/spotify-client/spotify-client.sublime-project"
+			],
+			[
+				"spoti",
+				"/opt/lampp/htdocs/spotify-client/spotify-client.sublime-project"
+			],
+			[
+				"hit",
+				"/opt/lampp/htdocs/hit-combo-maker/hit-combo-maker.sublime-project"
+			],
+			[
+				"wande",
+				"/opt/lampp/htdocs/wanderingowl_tools/wowl_tools.sublime-workspace"
+			],
+			[
+				"wand",
+				"/opt/lampp/htdocs/wanderingowl_tools/wowl_tools.sublime-project"
+			],
+			[
+				"",
+				"/opt/lampp/htdocs/autotall/autotal-landing.sublime-project"
+			],
+			[
+				"edi",
+				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
+			],
+			[
+				"bigb",
+				"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/bigblock.sublime-project"
+			],
+			[
+				"sha",
+				"/opt/lampp/htdocs/shadowmachine/wp-content/themes/Big Block WP Theme/bigblock.sublime-project"
+			],
+			[
+				"edisu",
+				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
+			],
+			[
+				"spor",
+				"/opt/lampp/htdocs/tests/demo/fix-sporn-landing.sublime-project"
+			],
+			[
+				"wan",
+				"/opt/lampp/htdocs/wanderingowl/wanderingowl.sublime-project"
+			],
+			[
+				"w",
+				"/opt/lampp/htdocs/wanderingowl/wanderingowl.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}
