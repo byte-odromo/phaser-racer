@@ -2,6 +2,7 @@ import {Track_0,Track_0_background} from './../objects/Tracks';
 import Car from './../objects/Car';
 import Tree from './../objects/Tree';
 import Judge from './../objects/Judge';
+import Sounds from './../objects/Sounds';
 
 class RaceGameState extends Phaser.State {
     constructor(...params){
@@ -23,10 +24,29 @@ class RaceGameState extends Phaser.State {
         //this.game.load.image('grass', './assets/gfx/snow_tile.png');
         this.game.load.image('grass', './assets/gfx/grass_tile.png');
         //this.game.load.image('elf', './assets/gfx/elf.png');
+        this.game.load.audio('raceTheme', './assets/audio/soundtracks/race_music.mp3');
+        this.game.load.audio('crowd1', './assets/audio/soundeffects/crowd_1.mp3');
+        this.game.load.audio('car1_sfx', 'assets/audio/soundeffects/car1_mixdown.mp3');
+        this.game.load.audio('car_drift', 'assets/audio/soundeffects/car_drift.mp3');
     }
 
     create() {
         window.gameState = this;
+
+        Sounds.game = this.game;
+        Sounds.addAudio(Sounds.RACE_MUSIC, 'raceTheme');
+        Sounds.addAudio(Sounds.CROWD1, 'crowd1');
+        Sounds.addAudio(Sounds.CAR_DRIFT, 'car_drift');
+        
+        let fx = Sounds.addAudio(Sounds.CAR1_SFX, 'car1_sfx');
+        fx.allowMultiple = true;
+        fx.addMarker(Sounds.CAR1_START, 0, 2.8);
+        fx.addMarker(Sounds.CAR1_ACELERATE, 3, 1, .5);
+        fx.addMarker(Sounds.CAR1_RUNNING, 4.5, 0.4, .4, true);
+        fx.addMarker(Sounds.CAR1_IDLE, 5, 0.6, 1, true);
+        fx.addMarker(Sounds.CAR1_DECELERATE, 6, 1, .5);
+        //Sounds.decodeAssets(this.game);
+
         this.game.physics.startSystem(Phaser.Physics.BOX2D);
         this.game.physics.box2d.setBoundsToWorld();
         this.game.physics.box2d.restitution = 0.0;
@@ -100,6 +120,12 @@ class RaceGameState extends Phaser.State {
     onGo() {
         this.player1.userInteractionAllowed = true;
         this.player2.userInteractionAllowed = true;
+        Sounds.playRaceMusic();
+    }
+
+    onFinish(car) {
+        Sounds.stopRaceMusic();
+        Sounds.playCrowdSound();
     }
 
     zoomTo(scale, duration = 500) {

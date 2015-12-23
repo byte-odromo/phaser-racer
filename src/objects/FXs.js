@@ -21,7 +21,7 @@ class FXs {
         if (!this.tiresMark) {
             this.tiresMark = this.car.game.add.graphics(0,0);
             this.car.game.world.swapChildren(this.tiresMark,this.car);
-            this.tiresMark.lineStyle(4,0x333333,.5);
+            this.tiresMark.lineStyle(4,0x333333,.3);
             this.tiresMark.moveTo(lastPosRLT.x, lastPosRLT.y);
         }
         this.tiresMark.moveTo(lastPosRLT.x, lastPosRLT.y);

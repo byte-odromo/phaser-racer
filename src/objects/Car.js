@@ -1,5 +1,6 @@
 'use strict'
 import FXs from './FXs';
+import Sounds from './Sounds';
 
 let frontAnchor;
 let scaleFactor = 2.5;
@@ -91,8 +92,13 @@ class Car extends Phaser.Sprite {
         this.tween = this.game.add.tween( tweenHelper ).to( {progress: 1}, circuitLapTime );
         this.tween.timeScale = 0;
         this.tween.onUpdateCallback( tweenHelper.onUpdate.bind(this) );
+        this.tween.onComplete.add(()=> {this.game.state.getCurrentState(this).onFinish();}, this);
         this.tween.repeat( this.game.state.getCurrentState().raceLaps-1 );
         this.tween.start();
+
+        Sounds.carStart().then(()=> {
+            Sounds.carIdle();
+        });
     }
 
     detectCrush(){
@@ -105,9 +111,19 @@ class Car extends Phaser.Sprite {
 
     throttleOn() {
         this.accelerate = true;
+        if (this.userInteractionAllowed) {
+            Sounds.carAcelerate().then(()=> {
+                if (this.accelerate) {
+                    Sounds.carRunning();
+                }
+            });
+        }
     }
 
     throttleOff() {
+        if (this.accelerate) {
+            Sounds.carDecelerate();
+        }
         this.accelerate = false;
     }
 
@@ -132,10 +148,14 @@ class Car extends Phaser.Sprite {
             }
 
             if (this.tween.timeScale < this.maxSpeed/2) {
+                if (!this.FXs.isMarkingTires) {
+                    Sounds.startDrift();
+                }
                 this.FXs.startTireMarks(this);
             } else {
                 if (this.FXs.isMarkingTires) {
                     this.FXs.stopTireMarks(this);
+                    Sounds.stopDrift();
                 }
             }
         } else {
@@ -146,6 +166,7 @@ class Car extends Phaser.Sprite {
 
             if (this.FXs.isMarkingTires) {
                 this.FXs.stopTireMarks(this);
+                Sounds.stopDrift();
             }
         }
 
