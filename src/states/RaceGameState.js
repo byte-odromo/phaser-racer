@@ -19,7 +19,7 @@ class RaceGameState extends Phaser.State {
         //this.game.load.image('blueCar', './assets/gfx/underwear_santa.png');
         this.game.load.image('blueCar', './assets/gfx/blue_car.png');
         //this.game.load.image('ground', './assets/gfx/track_0_background_snow.png');
-        this.game.load.image('ground', './assets/gfx/track_0_background.png');
+        this.game.load.image('ground', './assets/gfx/track_0_background_2.png');
         this.game.load.image('tree1', './assets/gfx/tree1_tile.png');
         //this.game.load.image('grass', './assets/gfx/snow_tile.png');
         this.game.load.image('grass', './assets/gfx/grass_tile.png');
@@ -28,24 +28,17 @@ class RaceGameState extends Phaser.State {
         this.game.load.audio('crowd1', './assets/audio/soundeffects/crowd_1.mp3');
         this.game.load.audio('car1_sfx', 'assets/audio/soundeffects/car1_mixdown.mp3');
         this.game.load.audio('car_drift', 'assets/audio/soundeffects/car_drift.mp3');
+        this.game.load.audio('car_running', 'assets/audio/soundeffects/car_running_1.mp3');
     }
 
     create() {
         window.gameState = this;
 
         Sounds.game = this.game;
-        Sounds.addAudio(Sounds.RACE_MUSIC, 'raceTheme');
+        Sounds.addAudio(Sounds.RACE_MUSIC, 'raceTheme', 1, true);
         Sounds.addAudio(Sounds.CROWD1, 'crowd1');
         Sounds.addAudio(Sounds.CAR_DRIFT, 'car_drift');
-        
-        let fx = Sounds.addAudio(Sounds.CAR1_SFX, 'car1_sfx');
-        fx.allowMultiple = true;
-        fx.addMarker(Sounds.CAR1_START, 0, 2.8);
-        fx.addMarker(Sounds.CAR1_ACELERATE, 3, 1, .5);
-        fx.addMarker(Sounds.CAR1_RUNNING, 4.5, 0.4, .4, true);
-        fx.addMarker(Sounds.CAR1_IDLE, 5, 0.6, 1, true);
-        fx.addMarker(Sounds.CAR1_DECELERATE, 6, 1, .5);
-        //Sounds.decodeAssets(this.game);
+        Sounds.addAudio(Sounds.CAR1_RUNNING, 'car_running');
 
         this.game.physics.startSystem(Phaser.Physics.BOX2D);
         this.game.physics.box2d.setBoundsToWorld();
@@ -106,14 +99,14 @@ class RaceGameState extends Phaser.State {
         let car = this.game.add.existing(
             new Car(this.game, asset, polePos, frontAnchor)
         );
-        car.init();
         // Set throttle
         let throttleKeyCar = this.input.keyboard.addKey(throttleKey);
         throttleKeyCar.onDown.add(car.throttleOn.bind(car), this);
         throttleKeyCar.onUp.add(car.throttleOff.bind(car), this);
 
         car.userInteractionAllowed = false;
-
+        car.sounds = Sounds.getCarSounds();
+        car.init();
         return car;
     }
 

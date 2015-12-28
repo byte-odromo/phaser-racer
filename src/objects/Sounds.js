@@ -6,6 +6,42 @@
 */
 var  singletonSounds = false;
 
+class CarSounds {
+    constructor(game) {
+        let Sounds = singletonSounds;
+        this.game = game;
+        this.drift = Sounds.addAudio(Sounds.CAR_DRIFT, 'car_drift');
+        this.running = Sounds.addAudio(Sounds.CAR1_RUNNING, 'car_running', 0, true);
+        console.log(this.running);
+        this.running.play();
+
+        this.fx = Sounds.addAudio(Sounds.CAR1_SFX, 'car1_sfx');
+        this.fx.allowMultiple = true;
+        this.fx.addMarker(Sounds.CAR1_START, 0, 2.8);
+        this.fx.addMarker(Sounds.CAR1_ACELERATE, 3, 1, .5);
+        //this.fx.addMarker(Sounds.CAR1_RUNNING, 4.5, 0.4, .4, true);
+        this.fx.addMarker(Sounds.CAR1_IDLE, 5, 0.6, 1, true);
+        this.fx.addMarker(Sounds.CAR1_DECELERATE, 6, 1, .5);
+        //Sounds.decodeAssets(this.game);
+        this.assets = new Map();
+    }
+
+    start() {
+        let Sounds = singletonSounds;
+        return new Promise((resolve, reject)=> {
+            Sounds.playMarker(Sounds.CAR1_SFX, Sounds.CAR1_START);
+            setTimeout(()=> {
+                resolve();
+            },2800);
+        });
+    }
+
+    idle() {
+        let Sounds = singletonSounds;
+        Sounds.playMarker(Sounds.CAR1_SFX, Sounds.CAR1_IDLE);
+    }
+}
+
 class Sounds {
     constructor() {
         this.RACE_MUSIC = 'race-music';
@@ -21,12 +57,16 @@ class Sounds {
         this.assets = new Map();
     }
 
+    getCarSounds() {
+        return new CarSounds(this.game);
+    }
+
     decodeAssets() {
         this.game.sound.setDecodedCallback([...this.asset], ()=>console.log('audio ready!'), this.game);
     }
 
-    addAudio(name, assetRef) {
-        let asset = this.game.add.audio(assetRef);
+    addAudio(name, assetRef, volume = 1, loop = false) {
+        let asset = this.game.add.audio(assetRef, volume, loop);
         this.assets.set(name, asset);
         return asset;
     }
@@ -67,37 +107,27 @@ class Sounds {
         this.playAudio(this.CROWD1);
     }
 
-    carStart() {
-        return new Promise((resolve, reject)=> {
-            this.playMarker(this.CAR1_SFX, this.CAR1_START);
-            setTimeout(()=> {
-                resolve();
-            },2800);
-        });
-    }
-
-    carIdle() {
-        this.playMarker(this.CAR1_SFX, this.CAR1_IDLE);
-    }
-
     carAcelerate() {
-        this.stopMarker(this.CAR1_SFX, this.CAR1_DECELERATE);
+        
+        /*this.stopMarker(this.CAR1_SFX, this.CAR1_DECELERATE);
         this.stopMarker(this.CAR1_SFX, this.CAR1_RUNNING);
         return new Promise((resolve, reject)=> {
             this.playMarker(this.CAR1_SFX, this.CAR1_ACELERATE);
             setTimeout(()=> {
                 resolve();
             },1000);
-        });
+        });*/
     }
 
     carRunning() {
-        this.playMarker(this.CAR1_SFX, this.CAR1_RUNNING);
+        //this.playMarker(this.CAR1_SFX, this.CAR1_RUNNING);
+       /* let audio = this.playAudio(this.CAR1_RUNNING);
+        audio.volume = 0;*/
     }
 
     carDecelerate() {
         this.stopMarker(this.CAR1_SFX, this.CAR1_ACELERATE);
-        this.stopMarker(this.CAR1_SFX, this.CAR1_RUNNING);
+        //this.stopMarker(this.CAR1_SFX, this.CAR1_RUNNING);
         this.playMarker(this.CAR1_SFX, this.CAR1_DECELERATE);
     }
 

@@ -32,6 +32,7 @@ class Car extends Phaser.Sprite {
         this.rotation2Restore;
         this.crushFactor;
         this.FXs = new FXs;
+        this.sounds;
     }
 
     init() {
@@ -96,9 +97,12 @@ class Car extends Phaser.Sprite {
         this.tween.repeat( this.game.state.getCurrentState().raceLaps-1 );
         this.tween.start();
 
-        Sounds.carStart().then(()=> {
-            Sounds.carIdle();
+        this.sounds.start().then(()=> {
+            this.sounds.idle();
         });
+        /*Sounds.carStart().then(()=> {
+            Sounds.carIdle();
+        });*/
     }
 
     detectCrush(){
@@ -112,18 +116,18 @@ class Car extends Phaser.Sprite {
     throttleOn() {
         this.accelerate = true;
         if (this.userInteractionAllowed) {
-            Sounds.carAcelerate().then(()=> {
+            /*Sounds.carAcelerate().then(()=> {
                 if (this.accelerate) {
                     Sounds.carRunning();
                 }
-            });
+            });*/
         }
     }
 
     throttleOff() {
-        if (this.accelerate) {
+        /*if (this.accelerate) {
             Sounds.carDecelerate();
-        }
+        }*/
         this.accelerate = false;
     }
 
@@ -149,13 +153,13 @@ class Car extends Phaser.Sprite {
 
             if (this.tween.timeScale < this.maxSpeed/2) {
                 if (!this.FXs.isMarkingTires) {
-                    Sounds.startDrift();
+                    this.sounds.drift.play();
                 }
                 this.FXs.startTireMarks(this);
             } else {
                 if (this.FXs.isMarkingTires) {
                     this.FXs.stopTireMarks(this);
-                    Sounds.stopDrift();
+                    this.sounds.drift.stop();
                 }
             }
         } else {
@@ -166,9 +170,12 @@ class Car extends Phaser.Sprite {
 
             if (this.FXs.isMarkingTires) {
                 this.FXs.stopTireMarks(this);
-                Sounds.stopDrift();
+                this.sounds.drift.stop();
             }
         }
+
+        let vol = this.tween.timeScale * 100 / this.maxSpeed;
+        this.sounds.running.volume = vol > .9 ? .9 : vol;
 
         //this.game.debug.box2dWorld();
     }
