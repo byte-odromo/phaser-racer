@@ -24,18 +24,30 @@ class Car extends Phaser.Sprite {
 
         this.accelerate = false;
         this.tween = null;
-        this.accelerationRate = 0.005;
-        this.maxSpeed = 1;
-        this.slowDownRate = 0.01;
+        this.accelerationRate = 0.0025;//should be tied to car type or track?
+        this.accelerationRate = this.track.accelerationRate;
+        this.maxSpeed = 1;//should be tied to car type or track?
+        //this.maxSpeed = .5;//should be tied to car type or track?
+        this.maxSpeed = this.track.maxSpeed;
+        this.slowDownRate = 0.01;//should be tied to car type or track?
+        this.slowDownRate = this.track.slowDownRate;
         this.userInteractionAllowed = false;
         this.crushed = false;
-        this.rotation2Restore;
         this.crushFactor;
         this.FXs = new FXs;
         this.sounds;
     }
 
     init() {
+
+        /*var style = { font: "40px Arial", fontWeight: 'bold', fill: "#ff0000", align: "center" };
+        let text = this.game.add.text(
+            0,
+            0,
+            '',
+            style
+        );
+        this.debugText = text;*/
 
         this.game.physics.box2d.enable(this,true);
 
@@ -45,6 +57,7 @@ class Car extends Phaser.Sprite {
         this.body.x = point.x*scaleFactor+30;
         this.body.y = point.y*scaleFactor;
         this.body.angle = -90;
+        this.body.rotation = this.gridPosition.direction;
         this.body.gravityScale = 0;
         this.body.friction = 9;
         this.body.restitution = -10;
@@ -66,8 +79,6 @@ class Car extends Phaser.Sprite {
 
         this.userInteractionAllowed = true;
         let tweenHelper = {progress: 0};
-        let angle = this.rotation;
-        let prevAngle = this.rotation;
         let drift = 0;
 
         tweenHelper.onUpdate = function(tween, value){
@@ -79,14 +90,17 @@ class Car extends Phaser.Sprite {
             let point = this.track.path.getPointAtLength( position );
 
             //update asset position
-            /*this.position.x = point.x;
-            this.position.y = point.y;*/
             this.frontAnchor.x = point.x*scaleFactor;
             this.frontAnchor.y = point.y*scaleFactor;
 
             this.detectCrush();
-            this.debugInfo.set('dsit',Phaser.Math.distance(this.position.x,this.position.y,this.frontAnchor.x,this.frontAnchor.y));
 
+            /*
+            //DEBUG
+            if (this.key == 'redCar'){
+                this.drift = this.drift < this.body.angularVelocity? this.body.angularVelocity: this.drift;
+                this.debugInfo.set('drift',this.drift);
+            }*/
         }
 
         let circuitLapTime = 5000;
@@ -100,15 +114,14 @@ class Car extends Phaser.Sprite {
         this.sounds.start().then(()=> {
             this.sounds.idle();
         });
-        /*Sounds.carStart().then(()=> {
-            Sounds.carIdle();
-        });*/
     }
 
     detectCrush(){
-        let factor = Phaser.Math.distance(this.position.x,this.position.y,this.frontAnchor.x,this.frontAnchor.y);
-        //this can't be bonded to scaleFactor becouse it depends on joint configuration and vehicle set up.
-        if( factor > 125 ){
+        //should be tied to car type or track?
+        /*if (this.body.angularVelocity > 10) {
+            this.crush();
+        }*/
+        if (this.body.angularVelocity > this.track.maxAngularVelocity) {
             this.crush();
         }
     }
@@ -116,27 +129,21 @@ class Car extends Phaser.Sprite {
     throttleOn() {
         this.accelerate = true;
         if (this.userInteractionAllowed) {
-            /*Sounds.carAcelerate().then(()=> {
-                if (this.accelerate) {
-                    Sounds.carRunning();
-                }
-            });*/
         }
     }
 
     throttleOff() {
-        /*if (this.accelerate) {
-            Sounds.carDecelerate();
-        }*/
         this.accelerate = false;
     }
 
     crush() {
         this.userInteractionAllowed = false;
         this.crushed = true;
+        this.slowDownRate = 0.05;
         setTimeout((function(){
             this.userInteractionAllowed = true;
             this.crushed = false;
+            this.slowDownRate = 0.01;
             //this.restoreLastRotation();
         }).bind(this),2000);
     }
@@ -144,7 +151,7 @@ class Car extends Phaser.Sprite {
     update() {
         if( this.accelerate && this.userInteractionAllowed){
             //wake up shape 'cause rope can't do it
-            this.body.applyForce(0.1, 0.1);
+            this.body.applyForce(0.01, 0.01);
             this.tween.timeScale+= this.accelerationRate;
 
             if( this.tween.timeScale > this.maxSpeed ){
@@ -177,7 +184,17 @@ class Car extends Phaser.Sprite {
         let vol = this.tween.timeScale * 100 / this.maxSpeed;
         this.sounds.running.volume = vol > .9 ? .9 : vol;
 
-        //this.game.debug.box2dWorld();
+        /*let dtext = '';
+        this.debugInfo.forEach( (value, key)=> {
+            dtext+= key + '=' + value + '\n';
+        })
+        this.debugText.text = dtext;*/
+        
+        /*text.anchor.set(0.5);
+        text.alpha = 0;
+        this.debugText = text;*/
+        
+        this.game.debug.box2dWorld();
     }
 }
 

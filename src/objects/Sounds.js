@@ -12,7 +12,6 @@ class CarSounds {
         this.game = game;
         this.drift = Sounds.addAudio(Sounds.CAR_DRIFT, 'car_drift');
         this.running = Sounds.addAudio(Sounds.CAR1_RUNNING, 'car_running', 0, true);
-        console.log(this.running);
         this.running.play();
 
         this.fx = Sounds.addAudio(Sounds.CAR1_SFX, 'car1_sfx');

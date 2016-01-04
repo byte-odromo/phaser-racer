@@ -1,4 +1,9 @@
-import {Track_0,Track_0_background} from './../objects/Tracks';
+import {
+    Track_0,
+    Track_0_background,
+    Track_1,
+    Track_1_background
+} from './../objects/Tracks';
 import Car from './../objects/Car';
 import Tree from './../objects/Tree';
 import Judge from './../objects/Judge';
@@ -20,6 +25,7 @@ class RaceGameState extends Phaser.State {
         this.game.load.image('blueCar', './assets/gfx/blue_car.png');
         //this.game.load.image('ground', './assets/gfx/track_0_background_snow.png');
         this.game.load.image('ground', './assets/gfx/track_0_background_2.png');
+        this.game.load.image('ground_1', './assets/gfx/track_1_background.png');
         this.game.load.image('tree1', './assets/gfx/tree1_tile.png');
         //this.game.load.image('grass', './assets/gfx/snow_tile.png');
         this.game.load.image('grass', './assets/gfx/grass_tile.png');
@@ -62,11 +68,15 @@ class RaceGameState extends Phaser.State {
 
 
         // Track
-        this.track = new Track_0();
-        this.raceLaps = 3;
+        /*this.track = new Track_0();
         this.game.add.existing(
             new Track_0_background(this.game)
+        );*/
+        this.track = new Track_1();
+        this.game.add.existing(
+            new Track_1_background(this.game)
         );
+        this.raceLaps = 3;
 
         this.player1 = this.addCar(1);
         this.player2 = this.addCar(2);

@@ -4,7 +4,6 @@ class Judge {
     constructor(game) {
         this._game = game;
         this._goPhrase = 'GO!';
-        this._
     }
 
     start(seconds) {
