@@ -531,15 +531,7 @@
 			"file": "src/states/RaceGameState.js",
 			"settings":
 			{
-				"buffer_size": 5909,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src (no physics)/objects/Tracks.js",
-			"settings":
-			{
-				"buffer_size": 4182,
+				"buffer_size": 5907,
 				"line_ending": "Unix"
 			}
 		},
@@ -563,7 +555,7 @@
 			"file": "src/objects/Car.js",
 			"settings":
 			{
-				"buffer_size": 7513,
+				"buffer_size": 6595,
 				"line_ending": "Unix"
 			}
 		},
@@ -619,7 +611,7 @@
 			"file": "src/objects/Tracks.js",
 			"settings":
 			{
-				"buffer_size": 5033,
+				"buffer_size": 5338,
 				"line_ending": "Unix"
 			}
 		},
@@ -653,17 +645,6 @@
 			{
 				"buffer_size": 12627,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "<!doctype html>\n<html>\n    <head>\n        <meta charset=\"UTF-8\" />\n        <title>Phaser Box2D Example</title>\n        <script src=\"js/phaser-arcade-physics.min.js\" type=\"text/javascript\"></script>\n        <script src=\"js/box2d-plugin-full.min.js\" type=\"text/javascript\"></script>\n    </head>\n    <body>\n\n        <script type=\"text/javascript\">\n\nvar game = new Phaser.Game(800, 600, Phaser.CANVAS, 'phaser-example', { preload: preload, create: create, render: render, update: update });\n\n//Vertices to create chainShape that forms the inner wall of the entire racetrack\nvar trackInnerVertices = [230,120, 150,200, 150,250, 250,250, 550,250, 600,300, 600,400, 550,450, 150,450, 150,490, 620,490, 670,440, 670,170, 620,120, 230,120];\n\n//Vertices to create chainSHape that forms the outer wall of the entire racetrack\nvar trackOuterVertices = [200,20, 50,150, 50,300, 100,350, 500,350, 500,360, 100,360, 50,400, 50,540, 100,590, 720,590, 770,540, 770,70, 720,20, 200,20];\nfunction preload() {\n    game.load.image('car', 'assets/sprites/car.png');\n    game.load.image('racetrack', 'assets/sprites/racetrack.png');\n    game.load.image('platform', 'assets/sprites/platform.png');\n}\n\n\nvar cursors; //arrow keys to control car\nvar car; //variable to hold car sprite\nvar lastLapTime = 0; //keep track of lap time\nvar lapTime = 0; //keep track of lap time\nvar lapText; //display last lap time\nvar turbo = false; //keep track of whether turbo is active\nvar turboTime = 0; //keep track of when turbo becomes available/runs out\nvar turboText; //display when turbo is available\nvar bestLapTime = 0; //keep track of best lap time\nvar bestLapText; //display best lap time\n\nfunction create() {\n	\n	game.stage.backgroundColor = '#124184';\n\n	// Enable Box2D physics\n	game.physics.startSystem(Phaser.Physics.BOX2D);\n    \n    game.physics.box2d.setBoundsToWorld();\n    game.physics.box2d.restitution = 0.5;\n    game.physics.box2d.friction = 2;\n    \n    //set up cursors for arrow key input\n    cursors = game.input.keyboard.createCursorKeys();\n    \n    //create track\n    game.add.sprite(0, 0, 'racetrack');\n    //Create track\n    var innerTrack = new Phaser.Physics.Box2D.Body(game, null, 0, 0, 0);\n    innerTrack.setChain(trackInnerVertices);\n    \n    var outerTrack = new Phaser.Physics.Box2D.Body(game, null, 0, 0, 0);\n    outerTrack.setChain(trackOuterVertices);\n    //Create car\n    car = game.add.sprite(730, game.world.centerY, 'car');\n    game.physics.box2d.enable(car);\n    createCar(car);\n    \n    //platform to be used for finish line\n    var plat = game.add.sprite(400, -20, 'platform');\n    game.physics.box2d.enable(plat);\n    plat.body.static = true;\n    \n    //fixture added to platform for finish line, to access Fixture.SetSensor method\n    var finish = plat.body.addRectangle(20, 100, 0, 90, 0);\n    finish.SetSensor(true);\n    \n    //set contact callback between car and finish line so that crossFinishLine() is called every time a lap is completed\n    car.body.setFixtureContactCallback(finish, crossFinishLine, this);\n    \n    \n    //set up text fields with default text values\n    lapText = game.add.text(5, 10, 'Last Lap Time: --', { fill: '#ffffff', font: '12pt Arial' });\n    bestLapText = game.add.text(5, 30, 'Best Lap Time: --', { fill: '#ffffff', font: '12pt Arial' });\n    turboText = game.add.text(5, 50, 'Hit Z for Turbo Boost!', { fill: '#dddddd', font: '12pt Arial' });\n    \n\n}\n\n//car/finish line contact callback. Called at the completion of each lap\nfunction crossFinishLine(carBody, lineBody, carFixture, lineFixture, begin, contact) {\n    //make sure it is a begin event so it is only called once each time the finish line is crossed\n    if (begin) {\n        if (lastLapTime != 0) { // if lastLapTime is not 0(if this isn't the first time crossing the finish line)\n            //calculate lap time\n            lapTime = game.time.now - lastLapTime; \n            //reset lastLapTime to the current time so it can be used to calculate the time of the next lap\n            lastLapTime = game.time.now;\n            //set lastLap text to the time of the last lap in seconds\n            lapText.text = 'Last Lap Time: ' + (lapTime / Phaser.Timer.SECOND);\n            //if bestLapTime hasn't been set yet, or if this lap is faster than the bestLapTime, then set this laps time as the new bestLapTime\n            if (bestLapTime == 0 || lapTime < bestLapTime) {\n                bestLapTime = lapTime;\n                bestLapText.text = 'Best Lap Time: ' + (bestLapTime / Phaser.Timer.SECOND);\n            }\n        } else { //if this is the first time crossing finish line\n            lastLapTime = game.time.now; //set lastLapTime so that next time the finish line is crossed it can calculate the lapTime and everything else\n        }\n    }\n}\n\n\nfunction update() {\n    //set zero rotation every frame, so that the car doesn't keep turning even when no keys are pressed\n    car.body.setZeroRotation();\n    \n    //handle left/right turning\n    if (cursors.left.isDown)\n    {\n        car.turnLeft();	\n    }\n    else if (cursors.right.isDown)\n    {\n        car.turnRight();\n    }\n\n    //accelerate when up is pressed\n    if (cursors.up.isDown) \n    {\n        car.accelerate();\n    }\n    else if (cursors.down.isDown)\n    {\n        //breaks unnecesary :). \n    }\n    \n    //Handle turbo\n    if (!turbo) {  //if turbo isn't currently active\n        if (game.input.keyboard.isDown(Phaser.Keyboard.Z)) //if Z(turbo key) is being pressed\n        {\n            if (game.time.now > turboTime) { //the current time is passed the turbo cooldown\n                //activate turbo, set the turboTime to a second from now so that once a second passes the update loop will turn of the turbo\n                turboTime = game.time.now + Phaser.Timer.SECOND;\n                turbo = true;\n                car.power = 800;\n            }\n        } \n        if (game.time.now > turboTime) {//whether or not z is pressed, check if current time is passed turbo time\n            //if it is set the turboText telling the user to activate turbo boost\n            turboText.text = 'Hit Z for Turbo Boost!';\n        } else { // if it's not ready yet tell the user how long until they can use turbo\n            turboText.text = 'Turbo in - ' + ((turboTime - game.time.now) / Phaser.Timer.SECOND);\n        }\n    } else { //if turbo is currently active\n        if (game.time.now > turboTime) { //if current time i passed turbo time then deactivate turbo\n            turboTime = game.time.now + Phaser.Timer.SECOND * 5;\n            turbo = false;\n            car.power = 450;\n        }\n    }\n\n}\n\nfunction render() {\n	\n	//game.debug.box2dWorld();\n	\n}\n\n//Create car. Takes a simple car sprite and adds all the properties and functions needed to make it a functional top-down vehicle\nfunction createCar(sprite) { \n    //set the body to a slightly smaller rectangle, so there is no padding around the outside of the sprite that cause you to hit walls even when visually the car sprite isn't touching the wall\n    sprite.body.setRectangle(18, 28, 0, 0, 0);\n    \n    //movement variables. power for speed/acceleration, turnspeed for handling, and damping to decrease sliding/driftyness\n    sprite.body.linearDamping = 1.6;\n    sprite.power = 450;\n    sprite.turnSpeed = 140;\n    \n    \n    //accelerate function\n    sprite.accelerate = function() {\n        sprite.body.thrust(sprite.power);\n    }\n    \n    \n    //left and right turning functions\n    sprite.turnLeft = function() {\n        sprite.body.rotateLeft(sprite.turnSpeed);\n    }\n    \n    sprite.turnRight = function() {\n        sprite.body.rotateRight(sprite.turnSpeed);\n    }\n        \n}\n    \n    \n\n\n        </script>\n\n    </body>\n</html>",
-			"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Top down car.html",
-			"file_size": 7864,
-			"file_write_time": 130946104906081243,
-			"settings":
-			{
-				"buffer_size": 7665,
-				"line_ending": "Windows"
 			}
 		},
 		{
@@ -763,6 +744,8 @@
 	],
 	"file_history":
 	[
+		"/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Top down car.html",
+		"/opt/lampp/htdocs/phaser-racer-demo/src (no physics)/objects/Tracks.js",
 		"/opt/lampp/htdocs/phaser-racer-demo/src/objects/StartLine.js",
 		"/opt/lampp/htdocs/phaser-racer/game/index.html",
 		"/opt/lampp/htdocs/phaser-racer/game/path-tester.html",
@@ -888,9 +871,7 @@
 		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/partials/main.html",
 		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/js/components/directives.js",
 		"/opt/lampp/htdocs/edisur_plataforma_web/cms/back-end/controllers/Controllers_Files.php",
-		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/js/components/services.js",
-		"/opt/lampp/htdocs/edisur_plataforma_web/common/back-end/utils/externals/cms/Files.php",
-		"/opt/lampp/htdocs/edisur_plataforma_web/cms/back-end/models/Models_Files.php"
+		"/opt/lampp/htdocs/TSMM/candidocan/front-end/bricks/mejoresamigos_form/js/components/services.js"
 	],
 	"find":
 	{
@@ -954,6 +935,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"should",
+			"this.drift",
+			"this.cr",
+			"should be tied to car type",
+			"should",
+			"track",
+			"angle",
+			"this.rotation",
+			"direction",
+			"this.maxSpeed",
 			"setTimeCountUI",
 			"getAsset",
 			"this.deb",
@@ -1071,17 +1062,7 @@
 			"power",
 			"MouseJoint",
 			"b2MouseJointDef",
-			"joint",
-			"density",
-			"joint",
-			"startAt",
-			"this.state.getAnchor()",
-			"getAndhor",
-			"frontAnchor",
-			"this.frontAnchor",
-			"this.enable",
-			"enable",
-			"accelerate"
+			"joint"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1220,7 +1201,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -1260,15 +1241,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5909,
+						"buffer_size": 5907,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3815,
-								3815
+								5907,
+								5907
 							]
 						],
 						"settings":
@@ -1279,44 +1260,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1072.0,
+						"translation.y": 1719.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "src (no physics)/objects/Tracks.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3509,
-								3509
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 15707.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "src/objects/Sounds.js",
 					"semi_transient": false,
 					"settings":
@@ -1343,11 +1294,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "src/objects/Judge.js",
 					"semi_transient": false,
 					"settings":
@@ -1374,24 +1325,24 @@
 						"translation.y": 307.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "src/objects/Car.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7513,
+						"buffer_size": 6595,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3801,
-								3801
+								6536,
+								6536
 							]
 						],
 						"settings":
@@ -1402,14 +1353,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1155.0,
+						"translation.y": 2410.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "src/objects/FXs.js",
 					"semi_transient": false,
 					"settings":
@@ -1440,7 +1391,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 6,
 					"file": "/opt/lampp/htdocs/spotify-sdk-wizard/src/services/Session.js",
 					"semi_transient": false,
 					"settings":
@@ -1470,7 +1421,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 7,
 					"file": ".gitignore",
 					"semi_transient": false,
 					"settings":
@@ -1498,7 +1449,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 8,
 					"file": "build/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1526,7 +1477,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 9,
 					"file": "/opt/lampp/htdocs/phaser-racer/game/path-tester.html",
 					"semi_transient": false,
 					"settings":
@@ -1552,11 +1503,11 @@
 						"translation.y": 104.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 10,
 					"file": "src/objects/Santa.js",
 					"semi_transient": false,
 					"settings":
@@ -1583,24 +1534,24 @@
 						"translation.y": 1935.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 11,
 					"file": "src/objects/Tracks.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5033,
+						"buffer_size": 5338,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4334,
-								4334
+								1393,
+								1393
 							]
 						],
 						"settings":
@@ -1610,14 +1561,14 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 330.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 12,
 					"file": "src/objects/Tree.js",
 					"semi_transient": false,
 					"settings":
@@ -1644,11 +1595,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 13,
 					"file": "src/objects/Grass.js",
 					"semi_transient": false,
 					"settings":
@@ -1677,7 +1628,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 14,
 					"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/components/ball.js",
 					"semi_transient": false,
 					"settings":
@@ -1703,11 +1654,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 18,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 15,
 					"file": "/opt/lampp/htdocs/freestyle/site/front-end/app/game.js",
 					"semi_transient": false,
 					"settings":
@@ -1732,41 +1683,11 @@
 						"translation.y": 4260.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 17,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/examples-extra/Top down car.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7665,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								4908,
-								4908
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1582.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 18,
+					"buffer": 16,
 					"file": "/opt/lampp/htdocs/phaser-racer/game/js/racer.js",
 					"semi_transient": false,
 					"settings":
@@ -1792,11 +1713,11 @@
 						"translation.y": 3030.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 19,
+					"stack_index": 17,
 					"type": "text"
 				},
 				{
-					"buffer": 19,
+					"buffer": 17,
 					"file": "gulpfile.js",
 					"semi_transient": false,
 					"settings":
@@ -1823,11 +1744,11 @@
 						"translation.y": 997.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 20,
+					"stack_index": 18,
 					"type": "text"
 				},
 				{
-					"buffer": 20,
+					"buffer": 18,
 					"file": "static/index.html",
 					"semi_transient": false,
 					"settings":
@@ -1856,7 +1777,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 21,
+					"buffer": 19,
 					"file": "/opt/lampp/htdocs/phaser-box2d-plugin-v102/package.json",
 					"semi_transient": false,
 					"settings":
@@ -1883,7 +1804,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 21,
+					"stack_index": 19,
 					"type": "text"
 				}
 			]
@@ -1945,6 +1866,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"track",
+				"phaser-racer-demo/src/objects/Tracks.js"
+			],
 			[
 				"car",
 				"phaser-racer-demo/src/objects/Car.js"
@@ -2452,10 +2377,6 @@
 			[
 				"devel",
 				"cms/back-end/controllers/Controllers_Devel.php"
-			],
-			[
-				"mmgall",
-				"cms/front-end/js/uicontrols/edisur_multimediagallery.js"
 			]
 		],
 		"width": 0.0
@@ -2463,9 +2384,17 @@
 	"select_project":
 	{
 		"height": 500.0,
-		"last_filter": "tsm",
+		"last_filter": "bigb",
 		"selected_items":
 		[
+			[
+				"bigb",
+				"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/bigblock.sublime-project"
+			],
+			[
+				"edis",
+				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
+			],
 			[
 				"tsm",
 				"/opt/lampp/htdocs/TSMM/TSMM.sublime-project"
@@ -2479,15 +2408,7 @@
 				"/opt/lampp/htdocs/spotify-client/spotify-sdk-wizard.sublime-project"
 			],
 			[
-				"bigb",
-				"/opt/lampp/htdocs/bigblock/wp-content/themes/Big Block WP Theme/bigblock.sublime-project"
-			],
-			[
 				"edisu",
-				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
-			],
-			[
-				"edis",
 				"/opt/lampp/htdocs/edisur_plataforma_web/edisur.sublime-project"
 			],
 			[

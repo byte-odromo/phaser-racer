@@ -194,7 +194,7 @@ class Car extends Phaser.Sprite {
         text.alpha = 0;
         this.debugText = text;*/
         
-        this.game.debug.box2dWorld();
+        //this.game.debug.box2dWorld();
     }
 }
 
